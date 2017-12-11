@@ -1,4 +1,4 @@
-<p align="center"><img width=12.5% src="./assets/Logo.png"></p>
+<p align="center"><img width=12.5% src="https://github.com/jimfilippou/mitsobox/blob/master/assets/Logo.png"></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![npm version](https://badge.fury.io/js/mitsobox.svg)](https://badge.fury.io/js/mitsobox)
