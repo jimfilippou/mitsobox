@@ -1,6 +1,5 @@
-<p align="center"><img width=30% src="https://i.imgur.com/dEcQuhS.png"></p>
+# Mitsobox
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![npm version](https://badge.fury.io/js/mitsobox.svg)](https://badge.fury.io/js/mitsobox)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jimfilippou/mitsobox.svg)](https://gemnasium.com/github.com/jimfilippou/mitsobox)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
