@@ -1,6 +1,6 @@
 {
-  "name": "faboxlous",
-  "version": "0.1.1",
+  "name": "mitsobox",
+  "version": "0.1.2",
   "main": "build/index.js",
   "author": "Jim Filippou",
   "license": "MIT",
