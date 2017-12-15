@@ -7,7 +7,7 @@
 
 ## Basic Overview
 
-Mitsobox is a library for nodeJS, that enables developers to have a better interaction with users using windows native dialog boxes. With simpler words, it just spawns a message box and wait for you to click yes, no, cancel etc.
+Mitsobox is a library for nodeJS, that calls native win32 API directly to show dialog boxes. With simpler words, it just spawns a message box using native windows service.
 
 <br>
 
@@ -31,13 +31,19 @@ npm i mitsobox --save
 
 var mitsobox = require('mitsobox');
 
-// Display a messagebx only with OK key
-mitsobox.OK("This is the body", "Your title");
+// Display a messagebox only with OK key
+mitsobox.ok("This is the body", "Your title");
 
-// Display a messagebx with OK - CANCEL keys, then get response
-mitsobox.OK_CANCEL("This is the body", "Your title").then(function (action) {
-  return console.log(action); // 'OK' or 'CANCEL'
+// Display a messagebox with OK - CANCEL keys, then get response
+mitsobox.okCancel("This is the body", "Your title").then(function (action) {
+  console.log(action); // 'OK' || 'CANCEL'
 });
+
+// Display a messagebox with ABORT - RETRY - IGNORE keys, then get response
+mitsobox.abortRetryIgnore("This is the body", "Your title").then(function (action){
+  console.log(action); // 'ABORT' ||  'RETRY' || 'IGNORE'
+});
+
 
 ```
 
