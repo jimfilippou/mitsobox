@@ -1,4 +1,4 @@
-# Mitsobox
+# Mitsobox 📦
 
 [![npm version](https://badge.fury.io/js/mitsobox.svg)](https://badge.fury.io/js/mitsobox)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jimfilippou/mitsobox.svg)](https://gemnasium.com/github.com/jimfilippou/mitsobox)
@@ -7,7 +7,7 @@
 
 ## Basic Overview
 
-Mitsobox is a library for nodeJS, that calls native win32 API directly to show dialog boxes. With simpler words, it just spawns a message box using native windows service.
+Mitsobox is a library for nodeJS scripts that calls native win32 API directly, to show dialog boxes. In simpler words, it creates a message box using native windows services (Yeah it's only for windows 😝).
 
 <br>
 
@@ -27,21 +27,20 @@ npm i mitsobox --save
 
 ## Usage
 ```javascript
-"use strict";
 
-var mitsobox = require('mitsobox');
+const mitsobox = require('mitsobox');
 
 // Display a messagebox only with OK key
-mitsobox.ok("This is the body", "Your title");
+mitsobox.ok("The coolest title ever", "The content");
 
 // Display a messagebox with OK - CANCEL keys, then get response
-mitsobox.okCancel("This is the body", "Your title").then(function (action) {
-  console.log(action); // 'OK' || 'CANCEL'
+mitsobox.okCancel("Another cool title", "Another cool content").then(function (action) {
+  console.log(action); // 'OK' or 'CANCEL'
 });
 
 // Display a messagebox with ABORT - RETRY - IGNORE keys, then get response
-mitsobox.abortRetryIgnore("This is the body", "Your title").then(function (action){
-  console.log(action); // 'ABORT' ||  'RETRY' || 'IGNORE'
+mitsobox.abortRetryIgnore("Breaking news!", "Nasa has confirmed that the earth is FLAT").then(function (action){
+  console.log(action); // 'ABORT' or  'RETRY' or 'IGNORE'
 });
 
 
