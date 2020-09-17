@@ -1,4 +1,4 @@
-import FFI from 'ffi';
+import FFI from 'ffi-napi';
 import { TEXT } from './text';
 
 const user32 = new FFI.Library('user32', {

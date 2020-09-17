@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.abortRetryIgnore = exports.okCancel = exports.ok = undefined;
 
-var _ffi = require('ffi');
+var _ffiNapi = require('ffi-napi');
 
-var _ffi2 = _interopRequireDefault(_ffi);
+var _ffiNapi2 = _interopRequireDefault(_ffiNapi);
 
 var _text = require('./text');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const user32 = new _ffi2.default.Library('user32', {
+const user32 = new _ffiNapi2.default.Library('user32', {
   MessageBoxW: ['int32', ['int32', 'string', 'string', 'int32']]
 });
 
